@@ -1,2 +1,8 @@
-<h1>Games#score</h1>
-<p>Find me in app/views/games/score.html.erb</p>
+<h1>Result</h1>
+<p><%=@word_proposed.capitalize%></p>
+
+<p><%= @answer %></p>
+
+<p>Your total score is <%= session[:score]  %> </p>
+
+<p><%=link_to 'New Game', new_path%></p>
